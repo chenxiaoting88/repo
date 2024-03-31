@@ -1,10 +1,11 @@
 package com.test;
 
+
 public interface Selling {
 
-	public final static long applePrice  = 8l;
-	public final static long berryPrice  = 13l;
+	public final static double applePrice  =  8;
+	public final static double berryPrice  = 13;
 	
-	public long totalSum(int kilo) throws Exception ;
+	public double totalSum(int kilo) throws Exception ;
 	
 }

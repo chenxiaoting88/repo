@@ -2,7 +2,7 @@ package com.test;
 
 public class SellingMongo  implements Selling  {
 	
-	private final static long mongoPrice  = 20L;
+	private final static double mongoPrice  = 20;
 
 	private final static Selling  sell = new SellingMongo();
 	
@@ -15,7 +15,7 @@ public class SellingMongo  implements Selling  {
 	}
 	
 	@Override
-	public long totalSum(int kilo) throws Exception {
+	public double totalSum(int kilo) throws Exception {
 		if(kilo<0) {
 			throw new Exception("斤数小于0");
 		}

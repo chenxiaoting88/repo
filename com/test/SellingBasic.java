@@ -1,5 +1,6 @@
 package com.test;
 
+
 public class SellingBasic implements Selling {
 	
 	private final static Selling  sell = new SellingBasic();
@@ -13,7 +14,7 @@ public class SellingBasic implements Selling {
 	}
 	
 	@Override
-	public long totalSum(int kilo) throws Exception {
+	public double totalSum(int kilo) throws Exception {
 		if(kilo<0) {
 			throw new Exception("斤数小于0");
 		}
